@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: whitesmoke;
+}
+.container{
+    height: 85%;
+    width: 400px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.brand{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+    height: 30px;
+}
+.brand>p{
+    color: whitesmoke;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    
+}
+.brand>input{
+    background-color: rgba( 0, 255, 0, 0.2);
+    height: 100%;
+    border-radius: 7px;
+    width: 80%;
+    margin-left: 30px;
+    border: none;
+}
+img{
+    height: 50%;
+    width: 50%;
+}
+.first>input{
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 30px;
+    background-color: green;
+    border-radius: 7px;
+    
+}
+.second{
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "flashlight clear delete multiplication" 
+    "seven eight nine division"
+    "four five six addition"
+    "one two three subtraction"
+    "AC neutral equal point"
+     ;
+    grid-gap: 10px;
+    grid-auto-rows: 16%;
+}
+.second>button:nth-child(1){
+    grid-area: neutral;
+}
+.second>button:nth-child(2){
+    grid-area: one;
+}
+.second>button:nth-child(3){
+    grid-area: two;
+}
+.second>button:nth-child(4){
+    grid-area: three;
+}
+.second>button:nth-child(5){
+    grid-area: four;
+}
+.second>button:nth-child(6){
+    grid-area: five;
+}
+.second>button:nth-child(7){
+    grid-area: six;
+}
+.second>button:nth-child(8){
+    grid-area: seven;
+}
+.second>button:nth-child(9){
+    grid-area: eight;
+}
+.second>button:nth-child(10){
+    grid-area: nine;
+}
+.second>button:nth-child(11){
+    grid-area: addition;
+}
+.second>button:nth-child(12){
+    grid-area: subtraction;
+}
+.second>button:nth-child(13){
+    grid-area: multiplication;
+}
+.second>button:nth-child(14){
+    grid-area: division;
+}
+.second>button:nth-child(15){
+    grid-area: point;
+}
+.second>button:nth-child(16){
+    grid-area: AC;
+}
+.second>button:nth-child(17){
+    grid-area: delete;
+}
+.second>button:nth-child(18){
+    grid-area: clear;
+}
+.second>button:nth-child(19){
+    grid-area: equal;
+}
+.second>button:nth-child(20){
+    grid-area: flashlight;
+}
+.second>button{
+    font-size: 20px;
+    border-radius: 15%;
+    font-weight: bolder;
+    background-color: gray;
+    color: black;
+}
+@media only screen and (max-height: 500px) and (orientation: landscape){
+    .second{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "seven eight nine division flashlight"
+        "four five six addition clear"
+        "one two three subtraction delete"
+        "AC neutral equal point multiplication"
+        ;
+    }
+}
