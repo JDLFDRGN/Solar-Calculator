@@ -1,0 +1,1 @@
+(6x + 5)^2/(5^x+1)^2 = I don't know, but I know that this is a solar calculator with a light button. This is my second calculator with concise code. 
